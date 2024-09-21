@@ -7,9 +7,11 @@
 str_split_one(string, pattern, n = Inf)
 }
 \arguments{
-\item{x}{A character vector with one element.}
+\item{string}{A character vector with one element.}
 
-\item{split}{What to split on.}
+\item{pattern}{What to split on.}
+
+\item{n}{The maximum length of each element of the output.}
 }
 \value{
 A character vector.
@@ -19,5 +21,5 @@ Split a string
 }
 \examples{
 x <- "alfa,bravo,delta,charlie"
-strsplit1(x, split=",")
+str_split_one(x, pattern=",")
 }
